@@ -1,5 +1,8 @@
 h1 {
   font-size: 50px;
+  font-family: "lobster", helvetica, arial;
+  text-align: center;
+  padding: 10px;
 }
 h2 {
   font-size: 45px;
@@ -23,19 +26,62 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-family: "lobster", helvetica, arial;
-  text-align: center;
-  padding: 10px;
+p {
+  font-size: 30px;
+  color: rgb(62, 62, 62);
+  line-height: 50px; /* 25px +25px + 25px */
 }
 
+main {
+  padding: 40px 120px;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header h2 {
+  margin-top: 0;
+}
+
+nav,
+footer {
+  background-color: bisque;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  line-height: 40px;
+}
+
+nav {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+  padding-left: 120px;
+}
+
+footer p {
+  margin: 0;
+}
+
+aside {
+  margin-top: 160px;
+  margin-left : 120px;
+  float: right;
+}
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 30px;
-  line-height: 30px;
-  height: 30px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .disc {
@@ -45,22 +91,19 @@ h1 {
 
 .rounded {
   border-radius: 50%;
-  border: gold 5px solid;
-  filter: drop-shadow(5px 5px 20px #008);
+  border: white 5px solid;
+  filter: drop-shadow(10px 10px 20px #333);
 }
 
 .intro {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .bio {
   margin-left: 50px;
   font-size: 15px;
-}
-
-main {
-  padding: 40px;
 }
 
 .profile-pic {
@@ -80,33 +123,28 @@ main {
   font-size: 40px;
   text-align: left;
 }
-
-p {
-  font-size: 30px;
-  color: rgb(62, 62, 62);
-  line-height: 50px; /* 25px +25px + 25px */
-}
-
-.sds {
-  font-size: 70px;
-  text-align: right;
+.home-text {
+  margin-left: 80px;
 }
 .p-home {
   text-align: left;
-  margin-left: 20px;
 }
 
 .code-elements {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .pictures {
   object-fit: contain;
 }
 
-.code-element{
+.code-element {
   width: 150px;
   height: 150px;
+}
+
+.github {
+font-size: 35px;
 }
